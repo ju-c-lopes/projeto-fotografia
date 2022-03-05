@@ -1,0 +1,185 @@
+@media screen and (min-width: 601px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    background: linear-gradient(0deg, rgb(31, 26, 23), rgb(78, 80, 82)) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    color: #b9b9b9;
+    z-index: 0;
+    display: fixed;
+  }
+
+  #menu {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #mob {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #desk {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+  }
+
+  h1 {
+    display: flex;
+    position: sticky;
+    top: 1vh;
+  }
+
+  #himg {
+    max-width: 248px;
+    max-height: 64px;
+    width: 5em;
+    height: 5em;
+  }
+
+  .nav {
+    background: rgb(31, 26, 23);
+    box-shadow: 
+      0 5px 10px rgb(0, 0, 0, .3),
+      0 0 10px rgb(0, 0, 0, .3),
+      0 5px 10px rgb(0, 0, 0, .3),
+      0 0 10px rgb(0, 0, 0, .3);
+    width: 100%;
+    padding-top: 3vh;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+  }
+
+  /* ==================================================== */
+
+  .ancor-nav {
+    font-family: 'Rajdhani', sans-serif;
+    color: silver;
+    transition: 0.5s ease-out;
+  }
+
+  .ancor-nav:hover {
+    color: rgb(110, 110, 110);
+    transform: scale(1.1);
+  }
+
+  /* ==================================================== */
+
+  #work-mob {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .workphoto {
+    position: relative;
+    top: 18vh;
+    /* bottom: -320px; */
+    width: 95%;
+    /* height: 110vh; */
+    margin: 0 auto 0 auto;
+  }
+
+  .workphoto h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 4em;
+    color: silver;
+    text-align: left;
+  }
+
+  #photos {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    /* bottom: -150vh; */
+    /* margin-bottom: 0; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5vh;
+    align-items: flex-start;
+    padding-bottom: 20vh;
+    /* grid-auto-rows: auto; */
+  }
+
+  .t-photo-d {
+    position: sticky;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .t-photo-d img {
+    width: 80%;
+    height: auto;
+  }
+
+  #show-photos {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    /* margin: auto 1vw auto 1vw; */
+  }
+  
+  /* ==================================================== */
+
+  footer {
+    background-color: rgb(31, 26, 23);
+    box-shadow: 
+      0 15px 10px rgb(0, 0, 0, .3),
+      0 0 10px rgb(0, 0, 0, .3),
+      0 -5px 10px rgb(0, 0, 0, .3),
+      0 0 10px rgb(0, 0, 0, .3);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  #box-rod-name {
+    z-index: 0;
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+
+  #rod-name {
+    position: sticky;
+    width: 100%;
+    display: block;
+    margin: 0 auto 0.7em auto;
+    z-index: 2;
+  }
+
+  #box-rod-name p {
+    margin-bottom: 0.5rem;
+  }
+
+  .r-foot {
+    margin: 0 7vw 0 auto;
+    position: absolute;
+    left: 70%;
+    display: block;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .r-foot img {
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0 2vw 0 2vw;
+    z-index: 2;
+  }
+}

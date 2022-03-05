@@ -1,0 +1,228 @@
+@media screen and (max-width: 600px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    background: linear-gradient(0deg, rgb(31, 26, 23), rgb(78, 80, 82)) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 10rem;
+    color: #b9b9b9;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  /* body {
+    height: 0;
+  } */
+
+  #desk {
+    visibility: hidden;
+  }
+
+  #mob {
+    visibility: visible;
+  }
+
+  h1 {
+    background-color: rgb(31, 26, 23);
+    box-shadow: 
+      -15px 5px 10px rgb(0, 0, 0, .8),
+      0 0 10px rgb(0, 0, 0, .8),
+      0 5px 10px rgb(0, 0, 0, .8),
+      0 0 10px rgb(0, 0, 0, .8);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin: 0 0 2vh 0;
+    z-index: 3;
+  }
+
+  h1 img {
+    width: 50vw;
+    height: max-content;
+  }
+
+  .nav-mob {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto 0 auto;
+  }
+
+  .nav {
+    background: rgb(31, 26, 23);
+    width: 100%;
+    padding-top: 3vh;
+    font-size: 2em;
+    display: flex;
+    position: fixed;
+    top: 13vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .7);
+    z-index: 2;
+  }
+
+  #menu-mob {
+    position: fixed;
+    top: -377px;
+  }
+
+  #menu {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-left: 2vw;
+    height: 13vh;
+    z-index: 3;
+  }
+
+  #button {
+    position: fixed;
+    width: 15vw;
+    height: auto;
+    z-index: 3;
+  }
+
+  .ancor-nav {
+    font-family: 'Rajdhani', sans-serif;
+    color: silver;
+    transition: 0.5s ease-out;
+  }
+
+  .ancor-nav:hover {
+    color: rgb(110, 110, 110);
+    transform: scale(1.1);
+  }
+
+  /* ==================================================== */
+
+  #s-g-desk {
+    visibility: hidden;
+    height: 0;
+  }
+
+  /* #s-g-mob {
+    /* position: sticky; */
+    /* visibility: visible; */
+    /* height: max-content; */
+  /* } */
+
+  .slidegroup {
+    position: absolute;
+    top: 15vh;
+    height: 480px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+
+  .carfoto {
+    max-width: 320px;
+    max-height: 480px;
+    width: 320px;
+    height: 480px;
+    filter: grayscale(10%);
+    transition: ease-in 0.5s;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
+
+  .carfoto .active{
+    max-width: 320px;
+    max-height: 480px;
+    width: 320px;
+    height: 480px;
+    filter: grayscale(10%);
+    transition: ease-in 0.5s;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
+
+  .carfoto:hover {
+    height: 480px;
+    filter: grayscale(0%);
+    transform: scale(1.2);
+  }
+
+  .carfoto .active:hover{
+    height: 480px;
+    filter: grayscale(0%);
+    transform: scale(1.2);
+  }
+
+  .carouselone {
+    box-shadow: 
+      4px 4px 5px #c0c0c0,
+      -4px 4px 5px #c0c0c0;
+    margin: 0 auto 0 auto;
+    transition: 0.5s ease-in;
+  }
+
+  .carouselone:hover {
+    box-shadow: none;
+    margin: 0 auto 0 auto;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 30%;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 0;
+    background-color: rgba(0,0,0,0);
+  }
+
+  #carouselExampleControlsOneM {
+    width: max-content;
+    height: 100%;
+  }
+
+  /* ========================================================== */
+
+  footer {
+    background-color: rgb(31, 26, 23);
+    box-shadow: 
+      5px 15px 10px rgb(0, 0, 0, .8),
+      0 0 10px rgb(0, 0, 0, .8),
+      -15px -5px 10px rgb(0, 0, 0, .8),
+      0 0 10px rgb(0, 0, 0, .8);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #rod-name {
+    margin: 0 1em 1em 1em;
+    position: sticky;
+  }
+
+  .r-foot {
+    margin: 0 auto 0 auto;
+    position: sticky;
+    display: block;
+    text-align: center;
+  }
+
+  .r-foot img {
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0 2vw -2vh 2vw;
+  }
+}
